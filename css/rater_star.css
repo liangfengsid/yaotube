@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+<!--stars-->
+
+
+.rater-star-item-current{
+	
+}
+
+.rater-star-item, .rater-star-item-current, .rater-star-item-hover {
+background-image: url(../images/star3.png); height: 20px; z-index: 11;
+position: absolute;
+top: 0;
+left: 0;
+background-repeat: repeat-x;
+}
+
+.starpinfen span {
+width: 378px;
+height: 35px;
+display: inline;
+float: right;
+}
+
+.rater-star {
+background-image:url(../images/star3.png); height: 20px; width: 100px;
+position: relative;
+list-style: none;
+margin: 0;
+padding: 0;
+background-repeat: repeat-x;
+background-position: left top;
+}
+
+.rater-star-item {
+background-position: -100% -100%;
+}
+
+.rater-star-item-current {
+background-position: left center;
+}

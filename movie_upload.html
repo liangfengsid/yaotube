@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Upload your movie</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  
+  <link rel="stylesheet" href="css/style2.css" type="text/css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/video.css" media="all"/>
+  <link rel="stylesheet" type="text/css" href="css/upload.css" media="all"/>
+  <script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/Humanst521_BT_400.font.js"></script>
+  <script type="text/javascript" src="js/Humanst521_Lt_BT_400.font.js"></script>
+  <script type="text/javascript" src="js/cufon-replace.js"></script>
+  <script type="text/javascript" src="js/mybutton.js"></script>
+  
+  <script type="text/javascript" src="js/catalogs.js"></script>
+ <script type="text/javascript" src="js/jquery.filedrop.js"></script>
+
+  <!-- <script type="text/javascript" src="js/jquery.filedrop 2.js"></script>  -->
+  <script type="text/javascript" src="js/upload.js"></script>
+
+</head>
+
+<body>
+<header>
+    <div class="container">
+    	<h1><a href="index.html">Yaotube</a></h1>
+        
+      <nav>
+        <ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+	</header>
+  <!-- #gallery -->
+  <div class="container3">
+  <div class="container1">
+	<div class="upload_container">
+    	<div>
+        	<h2>Select a movie</h2>
+        </div>
+        <div id="select_file_container">
+        	<input type="file" id="select_button"/>
+        </div>
+        
+        <div class="file_path_container">
+        	<p id="select_file_path" >Please select a file</p>
+            <p id="select_file_size" ></p>
+        </div>
+        
+        <section class="round_corner_area" id="drag_area"> <span class="message">You can also drag your movie and drop it here!</span></section>
+        <div id="metadata_container">
+        	<form class="videos-upload-form">
+                    <div>
+                        <div class="inputarea">
+                            <input type="text" id="caption" name="caption" class="form_input" value="" maxlength="50">
+                            <label class="label2"><span style="color:#F00">*</span>Caption：</label>
+                        </div>
+                        <div class="inputarea2">
+                           <textarea class="form_input" name="intro" id="intro"  style="height:78px;"></textarea>
+                            <label class="label2"><span style="color:#F00">*</span>Abstract：</label>
+                        </div>
+                        <div class="inputarea">
+                        <input type="text" class="form_input" id="tags"  name="tags" value="Seperate tags by space" onfocus="if(this.value=='Seperate tags by space')this.value=''" onblur="if(this.value === '')this.value = 'Seperate tags by space'">
+                            <label class="label2"><span style="color:#F00">*</span>Tags：</label>
+                        </div>
+                        <div class="inputarea3">
+                            
+                            <div id="items">
+                                <ul class="typeSelector" >
+                                <!--
+                                <li><span><input type="radio" name="catIds" id="form-cat-97" value="97" title="Serials"><label for="form-cat-97">Serials</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-96" value="96" title="Movie"><label for="form-cat-96">Movie</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-85" value="85" title="Variety"><label for="form-cat-85">Variety</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-100" value="100" title="Cartoon"><label for="form-cat-100">Cartoon</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-95" value="95" title="Music"><label for="form-cat-95">Music</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-87" value="87" title="Education"><label for="form-cat-87">Education</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-84" value="84" title="Documentary"><label for="form-cat-84">Documentary</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-91" value="91" title="News"><label for="form-cat-91">News</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-86" value="86" title="Entertainment"><label for="form-cat-86">Entertainment</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-92" value="92" title="Originals"><label for="form-cat-92">Originals</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-98" value="98" title="Sports"><label for="form-cat-98">Sports</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-105" value="105" title="Technology"><label for="form-cat-105">Technology</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-99" value="99" title="Games"><label for="form-cat-99">Games</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-89" value="89" title="Fashion"><label for="form-cat-89">Fashion</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-88" value="88" title="Travel"><label for="form-cat-88">Travel</label></span></li><li><span><input type="radio" name="catIds" id="form-cat-106" value="106" title="Others"><label for="form-cat-106">Others</label></span></li>-->                                </ul>
+                            </div>
+                            <label class="label1"><span style="color:#F00">*</span>Classes：</label>
+                        </div>
+                        
+                    </div>
+                </form>
+        </div>
+        <section class="button" id="upload_button">Upload</section>
+    </div>
+  
+  
+	</div>
+
+<div class="container2">
+<div id="allinfo_container">
+		<div id="search_container">
+            <input type="search" id="search_input"/>
+            <div id="search_button_container"><a id="search_button" class="button">Search</a></div>
+        </div>
+        <div id="info_container">
+				
+				<ul class="info_list">
+                	<li><h3>Video Information</h3></li>
+					<li>
+						Uploader: <a id="uploader">liangfengsid</a>
+					</li>
+					<li>
+						Upload time:<a id="upload_time">2012-3-22</a>
+					</li>
+                    <li>
+            			Clicked:<a id="click_count">100,102</a> times
+                
+                    </li>
+                    <li>
+                    Tags:&nbsp;&nbsp;<a class="button"> Action</a><a class="button">Scare</a><a class="button"> Action</a><a class="button">Scare</a><a class="button"> Action</a><a class="button">Scare</a><a class="button"> Action</a><a class="button">Scare</a>
+                    </li>
+					<li id="abstract">
+						Abstract:
+                        <br/>
+                        This is a very good film! Let's do it!大师傅厅地 地在 夺在地夺在地在城地在城地夺在城地夺食道癌 有伯 脸热望的玩儿有扔伯仍扔伯
+					</li>
+				</ul>
+			</div>
+        
+        <div id="faded">
+				
+				<ul class="pagination">
+                	<li><h3>Recommended Movies</h3></li>
+					<li>
+						<a href="http://www.baidu.com" rel="0">
+							<img src="images/f_thumb1.png" alt="">
+							<span class="left">
+								Villa<br />
+								2007 year<br />
+								5000 sq.ft
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" rel="1">
+							<img src="images/f_thumb1.png" alt="">
+							<span class="left">
+								Villa<br />
+								2009 year<br />
+								3500 sq.ft
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" rel="2">
+							<img src="images/f_thumb1.png" alt="">
+							<span class="left">
+								<b id="recommend_movie_title">Hello Las Vagas, I want you to go !!!</b>
+								<b id="recommend_movie_length">1:30:20</b>
+								Click: <b id="recommend_movie_click">111,111</b>times
+							</span>
+						</a>
+					</li>
+                    <li>
+						<a href="http://www.baidu.com" rel="0">
+							<img src="images/f_thumb1.png" alt="">
+							<span class="left">
+								Villa<br />
+								2007 year<br />
+								5000 sq.ft
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" rel="1">
+							<img src="images/f_thumb1.png" alt="">
+							<span class="left">
+								Villa<br />
+								2009 year<br />
+								3500 sq.ft
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" rel="2">
+							<img src="images/f_thumb1.png" alt="">
+							<span class="left">
+								Villa<br />
+								2010 year<br />
+								4200 sq.ft
+							</span>
+						</a>
+					</li>
+                    <li>
+						<a href="http://www.baidu.com" rel="0">
+							<img src="images/f_thumb1.png" alt="">
+							<span class="left">
+								Villa<br />
+								2007 year<br />
+								5000 sq.ft
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" rel="1">
+							<img src="images/f_thumb1.png" alt="">
+							<span class="left">
+								Villa<br />
+								2009 year<br />
+								3500 sq.ft
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+</div>
+
+</div>
+</div>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+    	<div class="wrapper">
+        <div class="fleft">Copyright - Software Institude of NJU</div>
+        <div class="fright"><a rel="nofollow" href="http://software.nju.edu.cn/" target="_blank">Institude Home</a> designed by software.nju.edu.cn&nbsp; &nbsp; </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript"> Cufon.now(); </script>
+
+</body>
+</html>

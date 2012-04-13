@@ -1,0 +1,41 @@
+/* Getting the new tags to behave */
+
+
+/*----- txt, links, lines, titles -----*/
+
+
+
+/* Faded Slider */
+#faded {
+	margin-top:20px;
+	padding-bottom:10px;
+}
+/*
+ * Required:If fixed height, state it here
+*/
+#faded ul.pagination {background:url(../images/pagination-splash.gif) no-repeat 0 0 #2a2a2a;border:1px solid #3a3a3a;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:-2px 8px 5px rgba(0, 0, 0, .4);-moz-box-shadow:-2px 8px 5px rgba(0, 0, 0, .4);-webkit-box-shadow:-2px 8px 5px rgba(0, 0, 0, .4);z-index:9;padding:5px 0 25px 0}
+	#faded ul.pagination li {width:250px;position:relative;background:url(../images/line-bot.gif) no-repeat 20px 100%;padding-bottom:1px;height:1%}
+	#faded ul.pagination li:last-child {background:none}
+		#faded ul.pagination li a {display:block;padding:5px 20px 14px 5px;overflow:hidden;color:#7f7f7f;text-decoration:none;font-size:13px;line-height:28px;height:1%;cursor:pointer;-moz-transition:all 0.3s ease-out; /* FF3.7+ */ -o-transition:all 0.3s ease-out; /* Opera 10.5 */ -webkit-transition:all 0.3s ease-out; /* Saf3.2+, Chrome */ }
+		#faded ul.pagination li a:hover, #faded ul.pagination li.current a {background-color:#1d1d1d;color:#fff}
+			#faded ul.pagination li a img {float:left;margin-right:10px}
+			#faded ul.pagination li a span.left {float:left;width:70px}
+			
+#info_container
+{
+	
+	padding-bottom:10px;
+}
+
+#info_container ul.info_list {background:url(../images/pagination-splash.gif) no-repeat 0 0 #2a2a2a;border:1px solid #3a3a3a;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:-2px 8px 5px rgba(0, 0, 0, .4);-moz-box-shadow:-2px 8px 5px rgba(0, 0, 0, .4);-webkit-box-shadow:-2px 8px 5px rgba(0, 0, 0, .4);z-index:9;padding:5px 0 25px 0}
+
+#info_container ul.info_list li {width:250px;position:relative;background:url(../images/line-bot.gif) no-repeat 20px 100%;padding-bottom:1px;height:1%}
+
+#info_container ul.info_list li {display:block;padding:5px 20px 5px 5px;overflow:visible;color:#ffffff;text-decoration:none;font-size:13px;line-height:28px;height:1%;-moz-transition:all 0.3s ease-out; /* FF3.7+ */ -o-transition:all 0.3s ease-out; /* Opera 10.5 */ -webkit-transition:all 0.3s ease-out; /* Saf3.2+, Chrome */ }
+
+#abstract{
+	width:inherit;
+	color:#FFFFFF;
+	background:inherit;
+}
+
